@@ -11,7 +11,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: "Do I need to replace my CRM?",
-    a: "No. Jobs to Close is designed to feed your existing process with cleaner lead data. CRM or spreadsheet sync is optional.",
+    a: "No. Job To Close is designed to feed your existing process with cleaner lead data. CRM or spreadsheet sync is optional.",
   },
   {
     q: "Can I customize the questions?",

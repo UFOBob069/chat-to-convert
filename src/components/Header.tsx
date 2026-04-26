@@ -7,6 +7,7 @@ const nav = [
   { href: "#features", label: "Features" },
   { href: "#industries", label: "Industries" },
   { href: "#comparison", label: "Compare" },
+  { href: "#testimonials", label: "Stories" },
   { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
 ];
@@ -22,7 +23,7 @@ export default function Header() {
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-accent text-white shadow-sm shadow-teal-900/10">
             <MessageCircle className="h-5 w-5" strokeWidth={2} />
           </span>
-          <span className="truncate">Jobs to Close</span>
+          <span className="truncate">Job To Close</span>
         </Link>
         <div className="flex flex-1 items-center justify-end gap-2 sm:gap-3">
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -56,22 +57,23 @@ export default function Header() {
                 href="#lead-form"
                 className="block border-t border-slate-100 px-4 py-2.5 text-sm font-semibold text-teal-700 hover:bg-slate-50"
               >
-                Get Early Access
+                Connect with Client Success
               </Link>
             </div>
           </details>
           <div className="flex shrink-0 items-center gap-2">
             <Link
               href="#lead-form"
-              className="hidden rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:text-slate-900 sm:block"
+              className="hidden rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:text-slate-900 md:block"
             >
-              Early access
+              Client Success
             </Link>
             <Link
               href="#lead-form"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-accent px-3.5 py-2.5 text-xs font-semibold text-white shadow-sm shadow-teal-900/15 transition hover:bg-accent-hover sm:px-4 sm:text-sm"
+              className="inline-flex max-w-[200px] items-center justify-center rounded-full bg-accent px-3 py-2.5 text-[11px] font-semibold leading-tight text-white shadow-sm shadow-teal-900/15 transition hover:bg-accent-hover sm:max-w-none sm:px-4 sm:text-sm"
             >
-              Get Early Access
+              <span className="sm:hidden">Get started</span>
+              <span className="hidden sm:inline">Connect with Client Success</span>
             </Link>
           </div>
         </div>

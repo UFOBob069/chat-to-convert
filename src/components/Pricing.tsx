@@ -20,10 +20,11 @@ export default function Pricing() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          Early access pricing
+          Simple pricing
         </h2>
         <p className="mt-3 max-w-2xl text-lg text-slate-600">
-          Simple, transparent pricing while we onboard founding customers.
+          Straightforward monthly pricing. Client Success helps you launch and
+          tune your intake flow.
         </p>
         <div className="mx-auto mt-12 max-w-lg">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-900/10 ring-1 ring-slate-900/5">
@@ -52,7 +53,7 @@ export default function Pricing() {
               href="#lead-form"
               className="mt-8 flex w-full items-center justify-center rounded-full bg-accent py-3.5 text-center text-base font-semibold text-white shadow-lg shadow-teal-900/20 transition hover:bg-accent-hover"
             >
-              Join the Early Access List
+              Connect with Client Success
             </Link>
             <p className="mt-5 text-center text-sm text-slate-600">
               If this helps you close just one additional job, it can pay for itself.

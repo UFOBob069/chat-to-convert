@@ -41,11 +41,11 @@ export default function ROISection() {
           <p className="mt-4 text-lg leading-relaxed text-slate-500">
             For HVAC, plumbing, roofing, restoration, and other high-value
             service businesses, one missed website lead can be worth hundreds or
-            thousands of dollars. Jobs to Close helps capture and route those
+            thousands of dollars. Job To Close helps capture and route those
             leads before they disappear.
           </p>
           <p className="mt-5 text-xl font-semibold text-slate-900">
-            If Jobs to Close helps you close just 1 more job per month, it can
+            If Job To Close helps you close just 1 more job per month, it can
             more than pay for itself.
           </p>
         </div>

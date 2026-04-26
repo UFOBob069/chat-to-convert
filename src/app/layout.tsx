@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jobs to Close — Turn Website Visitors Into Booked Jobs",
+  title: "Job To Close — Turn Website Visitors Into Booked Jobs",
   description:
-    "Embeddable chat and lead qualification for HVAC, plumbing, roofing, and other local service businesses. Capture contact info, qualify urgency, and route leads instantly.",
+    "Job To Close: embeddable chat and lead qualification for HVAC, plumbing, roofing, and other local service businesses. Capture contact info, qualify urgency, and route leads instantly.",
 };
 
 export default function RootLayout({

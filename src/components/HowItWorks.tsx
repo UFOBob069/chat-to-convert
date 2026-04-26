@@ -67,9 +67,18 @@ export default function HowItWorks() {
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">{s.body}</p>
                 <div className="mt-4 rounded-xl border border-slate-100 bg-slate-50 p-3 text-xs text-slate-700">
                   {s.step === 1 && (
-                    <code className="block rounded-md bg-slate-900 p-2 font-mono text-slate-100">
-                      {`<script src="https://site-chat-production.up.railway.app/widget.js" data-client-id="ramos-james-law" async></script>`}
-                    </code>
+                    <div>
+                      <p className="mb-2 text-[11px] font-medium uppercase tracking-wide text-slate-400">
+                        Example only — your real snippet comes from the dashboard
+                      </p>
+                      <code className="block whitespace-pre-wrap break-all rounded-md bg-slate-900 p-2 font-mono text-[11px] leading-relaxed text-slate-100 sm:text-xs">
+                        {`<script
+  src="https://cdn.example.com/widget.js"
+  data-client-id="YOUR_CLIENT_ID"
+  async>
+</script>`}
+                      </code>
+                    </div>
                   )}
                   {s.step === 2 && (
                     <div className="space-y-1">

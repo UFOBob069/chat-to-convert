@@ -28,12 +28,13 @@ export default function Hero() {
               href="#lead-form"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-teal-900/25 transition hover:-translate-y-0.5 hover:bg-accent-hover"
             >
-              Get Early Access
+              Connect with Client Success
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
           <p className="mt-5 text-sm font-medium text-slate-700">
-            Add the plugin script to your site and start capturing leads in minutes.
+            Connect with Client Success to get started — we’ll help you go live
+            fast.
           </p>
           <p className="mt-4 text-sm text-slate-500">
             Works on WordPress, Webflow, Squarespace, Shopify, and custom sites

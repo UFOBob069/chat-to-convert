@@ -16,7 +16,7 @@ export default function FinalCTA() {
           href="#lead-form"
           className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:bg-teal-50"
         >
-          Get Early Access
+          Connect with Client Success
           <ArrowRight className="h-5 w-5" />
         </Link>
       </div>

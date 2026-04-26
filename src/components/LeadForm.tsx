@@ -39,11 +39,11 @@ export default function LeadForm() {
     >
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Join the early access list
+          Connect with Client Success to get started
         </h2>
         <p className="mt-2 text-center text-slate-600">
-          Tell us about your business. We’ll follow up with setup details — no
-          spam, no hard sell.
+          Tell us about your business. A member of Client Success will reach out
+          with next steps — no spam, no hard sell.
         </p>
         <p className="mt-1 text-center text-sm font-medium text-teal-700">
           Takes 30 seconds.
@@ -52,11 +52,11 @@ export default function LeadForm() {
           <div className="mt-10 flex flex-col items-center rounded-2xl border border-teal-200 bg-white p-10 text-center shadow-sm">
             <CheckCircle2 className="h-14 w-14 text-teal-600" strokeWidth={1.5} />
             <p className="mt-4 text-lg font-semibold text-slate-900">
-              You’re on the list
+              Request received
             </p>
             <p className="mt-2 max-w-sm text-sm text-slate-600">
-              Thanks for your interest in Jobs to Close. We’ll reach out shortly
-              with next steps for early access.
+              Thanks for your interest in Job To Close. Client Success will
+              contact you shortly to get you started.
             </p>
           </div>
         ) : (
@@ -180,11 +180,11 @@ export default function LeadForm() {
                   Submitting…
                 </>
               ) : (
-                "Request early access"
+                "Send to Client Success"
               )}
             </button>
             <p className="text-center text-xs text-slate-500">
-              We’ll only use this information to contact you about early access.
+              We’ll only use this information to connect you with Client Success.
             </p>
           </form>
         )}

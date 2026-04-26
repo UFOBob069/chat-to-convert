@@ -7,6 +7,7 @@ import Features from "@/components/Features";
 import Industries from "@/components/Industries";
 import Comparison from "@/components/Comparison";
 import TrustProof from "@/components/TrustProof";
+import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
@@ -26,6 +27,7 @@ export default function Home() {
         <Industries />
         <Comparison />
         <TrustProof />
+        <Testimonials />
         <Pricing />
         <FAQ />
         <FinalCTA />

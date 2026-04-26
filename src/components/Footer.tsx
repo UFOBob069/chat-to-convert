@@ -9,7 +9,7 @@ export default function Footer() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white">
             <MessageCircle className="h-5 w-5" strokeWidth={2} />
           </span>
-          Jobs to Close
+          Job To Close
         </div>
         <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600">
           <Link href="#roi" className="hover:text-slate-900">
@@ -25,11 +25,14 @@ export default function Footer() {
             FAQ
           </Link>
           <Link href="#lead-form" className="hover:text-slate-900">
-            Early access
+            Client Success
+          </Link>
+          <Link href="#testimonials" className="hover:text-slate-900">
+            Stories
           </Link>
         </nav>
         <p className="text-sm text-slate-500">
-          © {new Date().getFullYear()} Jobs to Close. All rights reserved.
+          © {new Date().getFullYear()} Job To Close. All rights reserved.
         </p>
       </div>
     </footer>
