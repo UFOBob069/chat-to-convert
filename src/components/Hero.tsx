@@ -25,15 +25,15 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="#live-chat-demo"
+              href="#lead-form"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-teal-900/25 transition hover:-translate-y-0.5 hover:bg-accent-hover"
             >
-              Try the Live Demo
+              Get Early Access
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
           <p className="mt-5 text-sm font-medium text-slate-700">
-            👉 Ask a question in the chat to see how it works
+            Add the plugin script to your site and start capturing leads in minutes.
           </p>
           <p className="mt-4 text-sm text-slate-500">
             Works on WordPress, Webflow, Squarespace, Shopify, and custom sites

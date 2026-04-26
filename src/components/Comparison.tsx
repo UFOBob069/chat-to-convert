@@ -27,7 +27,7 @@ export default function Comparison() {
           More Than a Basic Chat Widget
         </h2>
         <p className="mt-3 max-w-2xl text-lg text-slate-600">
-          ChatToConvert is built around outcomes your P&amp;L cares about — not
+          Jobs to Close is built around outcomes your P&amp;L cares about — not
           vanity message counts.
         </p>
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -47,7 +47,7 @@ export default function Comparison() {
             </ul>
           </div>
           <div className="rounded-2xl border border-teal-200 bg-gradient-to-br from-white to-accent-soft/40 p-6 shadow-lg shadow-teal-900/5 sm:p-8">
-            <h3 className="text-lg font-semibold text-teal-950">ChatToConvert</h3>
+            <h3 className="text-lg font-semibold text-teal-950">Jobs to Close</h3>
             <ul className="mt-6 space-y-4">
               {ours.map((item) => (
                 <li key={item} className="flex gap-3 text-slate-800">

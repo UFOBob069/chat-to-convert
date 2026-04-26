@@ -68,7 +68,7 @@ export default function HowItWorks() {
                 <div className="mt-4 rounded-xl border border-slate-100 bg-slate-50 p-3 text-xs text-slate-700">
                   {s.step === 1 && (
                     <code className="block rounded-md bg-slate-900 p-2 font-mono text-slate-100">
-                      {`<script src="https://app.chattoconvert.com/widget.js"></script>`}
+                      {`<script src="https://site-chat-production.up.railway.app/widget.js" data-client-id="ramos-james-law" async></script>`}
                     </code>
                   )}
                   {s.step === 2 && (

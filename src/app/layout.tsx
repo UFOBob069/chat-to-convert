@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ChatToConvert — Turn Website Visitors Into Booked Jobs",
+  title: "Jobs to Close — Turn Website Visitors Into Booked Jobs",
   description:
     "Embeddable chat and lead qualification for HVAC, plumbing, roofing, and other local service businesses. Capture contact info, qualify urgency, and route leads instantly.",
 };
@@ -30,6 +31,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         {children}
+        <Script
+          src="https://site-chat-production.up.railway.app/widget.js"
+          data-client-id="ramos-james-law"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

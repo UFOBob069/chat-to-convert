@@ -55,7 +55,7 @@ export default function LeadForm() {
               You’re on the list
             </p>
             <p className="mt-2 max-w-sm text-sm text-slate-600">
-              Thanks for your interest in ChatToConvert. We’ll reach out shortly
+              Thanks for your interest in Jobs to Close. We’ll reach out shortly
               with next steps for early access.
             </p>
           </div>

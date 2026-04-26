@@ -13,10 +13,10 @@ export default function FinalCTA() {
           still ready to book.
         </p>
         <Link
-          href="#live-chat-demo"
+          href="#lead-form"
           className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:bg-teal-50"
         >
-          Try the Live Demo
+          Get Early Access
           <ArrowRight className="h-5 w-5" />
         </Link>
       </div>

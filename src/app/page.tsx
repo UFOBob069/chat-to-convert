@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import LiveDemoSection from "@/components/LiveDemoSection";
 import ProblemSection from "@/components/ProblemSection";
 import ROISection from "@/components/ROISection";
 import HowItWorks from "@/components/HowItWorks";
@@ -20,7 +19,6 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <LiveDemoSection />
         <ProblemSection />
         <ROISection />
         <HowItWorks />
