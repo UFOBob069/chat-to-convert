@@ -22,14 +22,42 @@ const industries = [
 export default function LeadForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    window.setTimeout(() => {
-      setLoading(false);
+    setError(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        const data = (await response.json().catch(() => null)) as {
+          error?: string;
+        } | null;
+        throw new Error(data?.error ?? "Something went wrong. Please try again.");
+      }
+
       setSubmitted(true);
-    }, 600);
+      form.reset();
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again.",
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -64,6 +92,14 @@ export default function LeadForm() {
             onSubmit={handleSubmit}
             className="mt-10 space-y-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-lg shadow-slate-900/5 sm:p-8"
           >
+            {error ? (
+              <p
+                role="alert"
+                className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800"
+              >
+                {error}
+              </p>
+            ) : null}
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block sm:col-span-2">
                 <span className="text-sm font-medium text-slate-700">Name</span>
@@ -147,9 +183,7 @@ export default function LeadForm() {
                   className="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-slate-900 shadow-sm outline-none transition focus:border-teal-400 focus:ring-4 focus:ring-teal-500/15"
                   defaultValue=""
                 >
-                  <option value="" disabled>
-                    Rough range is fine
-                  </option>
+                  <option value="">Rough range is fine</option>
                   <option value="1-10">1–10</option>
                   <option value="11-30">11–30</option>
                   <option value="31-75">31–75</option>
