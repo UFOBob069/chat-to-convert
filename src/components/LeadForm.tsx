@@ -128,11 +128,15 @@ export default function LeadForm() {
                 <span className="text-sm font-medium text-slate-700">Website</span>
                 <input
                   name="website"
-                  type="url"
-                  inputMode="url"
+                  type="text"
+                  autoComplete="url"
                   className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-2.5 text-slate-900 shadow-sm outline-none transition focus:border-teal-400 focus:ring-4 focus:ring-teal-500/15"
-                  placeholder="https://"
+                  placeholder="yoursite.com"
                 />
+                <span className="mt-1.5 block text-xs text-slate-500">
+                  Optional. A domain like yoursitename.com is fine — no https://
+                  required.
+                </span>
               </label>
               <label className="block">
                 <span className="text-sm font-medium text-slate-700">Email</span>
