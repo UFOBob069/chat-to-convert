@@ -32,8 +32,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         {children}
         <Script
-          src="https://site-chat-production.up.railway.app/widget.js"
-          data-client-id="ramos-james-law"
+          src="https://site-chat-production-a857.up.railway.app/widget.js"
+          data-client-id="cmq4l9nlx0000cv2jfk1az695"
           strategy="afterInteractive"
         />
       </body>
